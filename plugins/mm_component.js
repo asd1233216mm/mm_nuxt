@@ -13,7 +13,6 @@ import bar_title from '@/components/mm/bar/bar_title.vue';
 import bar_tool from '@/components/mm/bar/bar_tool.vue';
 import bar_user from '@/components/mm/bar/bar_user.vue';
 
-
 // 列表项
 import item_address from '@/components/mm/item/item_address.vue';
 import item_analyse from '@/components/mm/item/item_analyse.vue';
@@ -98,9 +97,10 @@ import swiper_text from '@/components/mm/swiper/swiper_text.vue';
 import table_coin from '@/components/mm/table/table_coin.vue';
 import table_stock from '@/components/mm/table/table_stock.vue';
 
-// 表格
+// 拓展
 import expand_drag from '@/components/mm/expand/expand_drag.vue';
 import expand_sptite from '@/components/mm/expand/expand_sptite.vue';
+import expand_pre from "@/components/mm/expand/expand_pre.vue";
 
 /* === 创建全局组件 === */
 export default {
@@ -194,7 +194,7 @@ export default {
         };
       }
     );
-	
+
     // 栏目组件
     Vue.component('bar_action', bar_action);
     Vue.component('bar_ad', bar_ad);
@@ -291,9 +291,9 @@ export default {
     Vue.component('swiper_text', swiper_text);
 
     //  拓展
-
     Vue.component('expand_drag', expand_drag);
     Vue.component('expand_sptite', expand_sptite);
+    Vue.component('expand_pre', expand_pre);
 
   }
 }
